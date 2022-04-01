@@ -1,0 +1,10 @@
+<app-header [tasks]="tasks"></app-header>
+
+<div *ngIf="tasks.length > 0; else elseBlock" class="container">
+  <app-item *ngFor="let task of tasks" [task]="task" [tasks]="tasks"></app-item>
+</div>
+<ng-template #elseBlock>
+  <div class="container noTasks">
+    <h2>Ya'll have no tasks</h2>
+  </div>
+</ng-template>

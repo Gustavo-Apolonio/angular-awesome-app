@@ -1,0 +1,66 @@
+$default: rgba(123, 31, 162, 0.8);
+$done: rgba(105, 240, 174, 0.8);
+$wait: rgba(244, 67, 54, 0.8);
+
+div.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 0.6em;
+
+  height: 5vh;
+  max-width: 13em;
+  width: 13em;
+  min-width: 13em;
+
+  background-color: rgba(43, 43, 43, 0.7);
+  box-shadow: 0 0 10px 2.5px rgb(0, 0, 0, 0.5);
+
+  margin: 1em;
+
+  cursor: pointer;
+
+  color: #fff;
+}
+
+div.checkbox {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+div.done :not(span) {
+  text-decoration: line-through;
+}
+
+span {
+  padding: 0.2em 0.5em;
+
+  border-radius: 50px;
+
+  background-color: $default;
+  color: #fff;
+
+  font-size: 7pt;
+  letter-spacing: 0.1em;
+
+  text-transform: capitalize;
+  text-align: center;
+
+  width: 33%;
+
+  margin-left: 5px;
+}
+
+span.waiting {
+  background-color: $wait;
+  color: rgb(43, 43, 43);
+  font-weight: bold;
+}
+
+span.done {
+  background-color: $done;
+  color: rgb(43, 43, 43);
+  font-weight: bold;
+}

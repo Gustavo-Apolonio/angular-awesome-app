@@ -1,0 +1,8 @@
+<div class="container {{ task.status.name }}">
+  <div class="checkbox">
+    <mat-checkbox (change)="onCheck($event)" [checked]="task.status.done">
+      {{ task.name }}
+    </mat-checkbox>
+  </div>
+  <span class="{{ task.status.name }}">{{ task.status.name }}</span>
+</div>
