@@ -4,16 +4,16 @@
       "id": 1,
       "name": "Example #001",
       "status": {
-        "name": "waiting",
-        "done": false
+        "name": "done",
+        "done": true
       }
     },
     {
       "id": 2,
       "name": "Example #002",
       "status": {
-        "name": "waiting",
-        "done": false
+        "name": "done",
+        "done": true
       }
     },
     {
@@ -23,22 +23,6 @@
         "name": "done",
         "done": true
       }
-    },
-    {
-      "name": "Testing",
-      "status": {
-        "name": "done",
-        "done": true
-      },
-      "id": 4
-    },
-    {
-      "name": "Test",
-      "status": {
-        "name": "done",
-        "done": true
-      },
-      "id": 5
     }
   ]
 }

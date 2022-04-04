@@ -1,0 +1,31 @@
+<soma-modal
+  [open]="open"
+  (somaModalOpen)="toggleIsOpen(true)"
+  (somaModalClose)="toggleIsOpen(false)"
+  backdrop-dismiss="false"
+  size="md"
+>
+  <div class="app-modal-slide">
+    <soma-banner
+      animated
+      banner-index="bannerIndex"
+      delay="60000"
+      nav-position="bottom"
+    >
+      <soma-banner-item
+        *ngFor="let slide of slides"
+        background-color="transparent"
+      >
+        <div>
+          <div>
+            <img />
+          </div>
+          <div>
+            <h5></h5>
+            <p></p>
+          </div>
+        </div>
+      </soma-banner-item>
+    </soma-banner>
+  </div>
+</soma-modal>

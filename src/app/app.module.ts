@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -22,6 +22,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatInputModule } from '@angular/material/input';
 
 import { FormsModule } from '@angular/forms';
+import { WelcomeModalComponent } from './components/welcome-modal/welcome-modal.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { FormsModule } from '@angular/forms';
     HeaderComponent,
     ItemComponent,
     AddTaskComponent,
+    WelcomeModalComponent,
   ],
   imports: [
     BrowserModule,
@@ -55,5 +57,6 @@ import { FormsModule } from '@angular/forms';
     },
   ],
   bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppModule {}
