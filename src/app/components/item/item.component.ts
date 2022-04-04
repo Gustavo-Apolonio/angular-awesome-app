@@ -1,9 +1,9 @@
 import { Component, OnInit, Input } from '@angular/core';
 
-import { TaskService } from '../../services/task.service';
+import { TaskService } from '../../shared/services/task.service';
 import { Task } from '../../models/task';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { UtilService } from 'src/app/services/util.service';
+import { UtilService } from 'src/app/shared/services/util.service';
 
 @Component({
   selector: 'app-item',

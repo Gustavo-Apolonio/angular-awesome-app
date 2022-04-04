@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
-import { TaskService } from './services/task.service';
+import { TaskService } from './shared/services/task.service';
 import { Task } from './models/task';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { UtilService } from './services/util.service';
+import { UtilService } from './shared/services/util.service';
 
 @Component({
   selector: 'app-root',

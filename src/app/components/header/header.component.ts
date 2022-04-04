@@ -3,7 +3,8 @@ import { Component, Input, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Task } from 'src/app/models/task';
-import { TaskService } from 'src/app/services/task.service';
+import { TaskService } from 'src/app/shared/services/task.service';
+import { UtilService } from 'src/app/shared/services/util.service';
 
 import { AddTaskComponent } from '../add-task/add-task.component';
 
@@ -16,7 +17,8 @@ export class HeaderComponent implements OnInit {
   constructor(
     private modal: MatDialog,
     private _snackBar: MatSnackBar,
-    private taskService: TaskService
+    private taskService: TaskService,
+    private utilService: UtilService
   ) {}
 
   @Input() tasks: Task[] = [];
@@ -46,6 +48,7 @@ export class HeaderComponent implements OnInit {
             `Task '${result}' added successfully! #.#`,
             'Yep'
           );
+          this.tasks = this.utilService.sort(this.tasks);
         });
       }
     });

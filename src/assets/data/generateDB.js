@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-const QTD_TASKS = 999;
+const QTD_TASKS = 3;
 
 function createTask(index = 0) {
   let id = index + 1;

@@ -22,6 +22,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatInputModule } from '@angular/material/input';
 
 import { FormsModule } from '@angular/forms';
+import { WelcomeModalComponent } from './components/welcome-modal/welcome-modal.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { FormsModule } from '@angular/forms';
     HeaderComponent,
     ItemComponent,
     AddTaskComponent,
+    WelcomeModalComponent,
   ],
   imports: [
     BrowserModule,

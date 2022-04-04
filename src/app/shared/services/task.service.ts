@@ -7,7 +7,7 @@ import {
 } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { retry, catchError } from 'rxjs/operators';
-import { Task } from '../models/task';
+import { Task } from '../../models/task';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Injectable({
